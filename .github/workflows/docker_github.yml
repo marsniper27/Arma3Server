@@ -1,5 +1,9 @@
 name: Publish Docker
-on: [push]
+on: 
+  push:
+    branches:
+      - master  # Replace with the branch you want to track (e.g., 'main')
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
