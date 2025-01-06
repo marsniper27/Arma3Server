@@ -1,7 +1,7 @@
 FROM debian:bullseye-slim
 
-LABEL maintainer="Brett - github.com/brettmayson"
-LABEL org.opencontainers.image.source=https://github.com/brettmayson/arma3server
+LABEL maintainer="Mars - github.com/marsniper27"
+LABEL org.opencontainers.image.source=https://github.com/marsniper27/arma3server
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN apt-get update \
