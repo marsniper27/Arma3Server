@@ -7,10 +7,10 @@ services:
     container_name: arma3
     network_mode: host
     volumes:
-      - './missions:/arma3/mpmissions'
-      - './configs:/arma3/configs'
-      - './mods:/arma3/mods'
-      - './servermods:/arma3/servermods'
+      - '/mnt/HDDs/arma3/missions:/arma3/mpmissions'
+      - '/mnt/HDDs/arma3/configs:/arma3/configs'
+      - '/mnt/HDDs/arma3/mods:/arma3/mods'
+      - '/mnt/HDDs/arma3/servermods:/arma3/servermods'
     env_file: stack.env
     restart: unless-stopped
     ports:
